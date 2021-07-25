@@ -30,4 +30,5 @@ git push heroku main
 
 #### Work
 
-1. Set up node, express and heroku and test
+1. Set up the backend part such as node, express and heroku and test
+2. Set up the front end part and build with webpack
