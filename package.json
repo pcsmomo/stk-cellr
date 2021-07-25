@@ -4,7 +4,8 @@
   "description": "stk cellr website",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js",
+    "dev": "nodemon index.js"
   },
   "repository": {
     "type": "git",
@@ -16,5 +17,14 @@
   "bugs": {
     "url": "https://github.com/pcsmomo/stk-cellr/issues"
   },
-  "homepage": "https://github.com/pcsmomo/stk-cellr#readme"
+  "homepage": "https://github.com/pcsmomo/stk-cellr#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "engines": {
+    "node": "v14.15"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.12"
+  }
 }

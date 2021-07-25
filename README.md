@@ -17,12 +17,17 @@
 
 ### SCSS
 
-Use 7-1 path
+[SCSS Guidline 7-1 pattern](https://sass-guidelin.es/#the-7-1-pattern)
 
 ### Webpack
 
 ### Heroku
 
+heroku -v
+heroku login
+heroku apps:create stkcellr
+git push heroku main
+
 #### Work
 
-1. Set set build and deploy with the simple app
+1. Set up node, express and heroku and test
