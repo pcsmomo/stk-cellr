@@ -30,5 +30,18 @@ git push heroku main
 
 #### Work
 
-1. Set up the backend part such as node, express and heroku and test
+1. Set up the backend node/express server
 2. Set up the front end part and build with webpack
+   1. webpack config
+      1. images
+      2. txt
+      3. css/sass - loaders
+         ```sh
+         client % npm install --save-dev style-loader css-loader sass-loader sass
+         ```
+      4. next!?
+3. Backend server with heroku and test if it is working
+
+# Following Webpack 5 Course
+
+<!-- Currently following 17. Handling SASS -->

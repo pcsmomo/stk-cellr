@@ -1,1 +1,3 @@
-console.log('webpack build test');
+import test from './components/test/test';
+
+test();
