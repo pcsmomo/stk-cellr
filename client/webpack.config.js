@@ -6,12 +6,17 @@ module.exports = {
     filename: 'bundle.js',
     path: path.resolve(__dirname, './build')
   },
-  mode: 'development',
+  mode: 'none',
   module: {
     rules: [
       {
         test: /\.(png|jpg|jpeg)$/,
-        type: 'asset/resource'
+        type: 'asset',
+        parser: {
+          dataUrlCondition: {
+            maxSize: 3 * 1024 // 3 kilobytes, The default size is 8kb
+          }
+        }
       },
       {
         test: /\.txt/,
@@ -24,6 +29,16 @@ module.exports = {
       {
         test: /\.scss$/,
         use: ['style-loader', 'css-loader', 'sass-loader']
+      },
+      {
+        test: /\.js$/,
+        exclude: /node_modules/,
+        use: {
+          loader: 'babel-loader',
+          options: {
+            presets: ['@babel/preset-env']
+          }
+        }
       }
     ]
   }

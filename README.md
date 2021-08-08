@@ -39,9 +39,12 @@ git push heroku main
          ```sh
          client % npm install --save-dev style-loader css-loader sass-loader sass
          ```
-      4. next!?
+      4. babel
+         ```sh
+         client % npm install --save-dev @babel/core babel-loader @babel/preset-env
+         ```
 3. Backend server with heroku and test if it is working
 
 # Following Webpack 5 Course
 
-<!-- Currently following 17. Handling SASS -->
+<!-- Currently following 18. Using Latest JavaScript Features With Babel -->
