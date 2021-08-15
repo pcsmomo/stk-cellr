@@ -33,18 +33,25 @@ git push heroku main
 1. Set up the backend node/express server
 2. Set up the front end part and build with webpack
    1. webpack config
-      1. images
-      2. txt
-      3. css/sass - loaders
-         ```sh
-         client % npm install --save-dev style-loader css-loader sass-loader sass
-         ```
-      4. babel
-         ```sh
-         client % npm install --save-dev @babel/core babel-loader @babel/preset-env
-         ```
+      1. Loaders
+         1. images
+         2. txt
+         3. css/sass - loaders
+            ```sh
+            client % npm install --save-dev style-loader css-loader sass-loader sass
+            ```
+         4. babel
+            ```sh
+            client % npm install --save-dev @babel/core babel-loader @babel/preset-env
+            ```
+      2. Plugin
+         1. TerserPlugin : Minimizing
+         2. mini-css-extract-plugin : extracts CSS into separate files
+            ```sh
+            npm install --save-dev mini-css-extract-plugin
+            ```
 3. Backend server with heroku and test if it is working
 
 # Following Webpack 5 Course
 
-<!-- Currently following 18. Using Latest JavaScript Features With Babel -->
+<!-- Currently following 22. Extracting CSS Into a Separate Bundle, Part 2 -->
