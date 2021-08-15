@@ -46,12 +46,21 @@ git push heroku main
             ```
       2. Plugin
          1. TerserPlugin : Minimizing
-         2. mini-css-extract-plugin : extracts CSS into separate files
+         2. MiniCssExtractPlugin : extracts CSS into separate files
             ```sh
             npm install --save-dev mini-css-extract-plugin
+            ```
+         3. CleanWebpackPlugin : clean build folder before generating new bundle
+            ```sh
+            npm install --save-dev clean-webpack-plugin
+            ```
+         4. HTMLWebpackPlugin
+            ```sh
+            npm install --save-dev html-webpack-plugin
             ```
 3. Backend server with heroku and test if it is working
 
 # Following Webpack 5 Course
 
-<!-- Currently following 22. Extracting CSS Into a Separate Bundle, Part 2 -->
+<!-- Currently following 25. Generating HTML Files Automatically During Webpack Build Process -->
+<!-- Todo: use html template from create-react-app -->
