@@ -37,30 +37,42 @@ git push heroku main
          1. images
          2. txt
          3. css/sass - loaders
-            ```sh
-            client % npm install --save-dev style-loader css-loader sass-loader sass
-            ```
+            `client % npm install --save-dev style-loader css-loader sass-loader sass`
          4. babel
-            ```sh
-            client % npm install --save-dev @babel/core babel-loader @babel/preset-env
-            ```
+            `client % npm install --save-dev @babel/core babel-loader @babel/preset-env`
       2. Plugin
          1. TerserPlugin : Minimizing
          2. MiniCssExtractPlugin : extracts CSS into separate files
-            ```sh
-            npm install --save-dev mini-css-extract-plugin
-            ```
+            `npm install --save-dev mini-css-extract-plugin`
          3. CleanWebpackPlugin : clean build folder before generating new bundle
-            ```sh
-            npm install --save-dev clean-webpack-plugin
-            ```
+            `npm install --save-dev clean-webpack-plugin`
          4. HTMLWebpackPlugin
-            ```sh
-            npm install --save-dev html-webpack-plugin
-            ```
-3. Backend server with heroku and test if it is working
+            `npm install --save-dev html-webpack-plugin`
+3. Deploy to github page
+   1. install gh-page
+      `npm install --save-dev gh-pages`
+   2. Configure package.json
+      ```json
+      {
+        "homepage": "https://pcsmomo.github.io/stk-cellr",
+        "scripts": {
+          "predeploy": "yarn build",
+          "deploy": "gh-pages -d build"
+        }
+      }
+      ```
+   3. Deploy
+      `npm run deploy`
+4. (X) Backend server with heroku and test if it is working
 
 # Following Webpack 5 Course
 
 <!-- Currently following 25. Generating HTML Files Automatically During Webpack Build Process -->
-<!-- Todo: use html template from create-react-app -->
+<!-- Todo: Use dev server and hot module -->
+
+[DevServer](https://webpack.js.org/configuration/dev-server/) \
+[Hot Module](https://webpack.js.org/concepts/hot-module-replacement/)
+
+### Deployment to github page
+
+`npm run deploy`
