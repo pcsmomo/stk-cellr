@@ -4,14 +4,21 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
-module.exports = (webpackEnv) => {
+module.exports = function (webpackEnv) {
+  const isDevMode = webpackEnv.WEBPACK_SERVE ? true : false;
+
   return {
     entry: './src/index.js',
     output: {
       filename: 'bundle[contenthash].js',
       path: path.resolve(__dirname, './build')
     },
-    mode: 'none',
+    mode: isDevMode ? 'development' : 'production',
+    devServer: {
+      compress: false,
+      hot: true,
+      port: 9000
+    },
     module: {
       rules: [
         {
@@ -29,11 +36,18 @@ module.exports = (webpackEnv) => {
         },
         {
           test: /\.css$/,
-          use: [MiniCssExtractPlugin.loader, 'css-loader']
+          use: [
+            isDevMode ? 'style-loader' : MiniCssExtractPlugin.loader,
+            'css-loader'
+          ]
         },
         {
           test: /\.scss$/,
-          use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader']
+          use: [
+            isDevMode ? 'style-loader' : MiniCssExtractPlugin.loader,
+            'css-loader',
+            'sass-loader'
+          ]
         },
         {
           test: /\.js$/,

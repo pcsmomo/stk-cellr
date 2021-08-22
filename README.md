@@ -48,6 +48,8 @@ git push heroku main
             `npm install --save-dev clean-webpack-plugin`
          4. HTMLWebpackPlugin
             `npm install --save-dev html-webpack-plugin`
+      3. Dev server
+         `npm install webpack-dev-server --save-dev`
 3. Deploy to github page
    1. install gh-page
       `npm install --save-dev gh-pages`
@@ -65,14 +67,15 @@ git push heroku main
       `npm run deploy`
 4. (X) Backend server with heroku and test if it is working
 
-# Following Webpack 5 Course
+## Following Webpack 5 Course
 
-<!-- Currently following 25. Generating HTML Files Automatically During Webpack Build Process -->
-<!-- Todo: Use dev server and hot module -->
-
-[DevServer](https://webpack.js.org/configuration/dev-server/) \
-[Hot Module](https://webpack.js.org/concepts/hot-module-replacement/)
+Ready to go with React!
 
 ### Deployment to github page
 
 `npm run deploy`
+
+### Links
+
+[DevServer](https://webpack.js.org/configuration/dev-server/) \
+[Webpack Dev Server](https://github.com/webpack/webpack-dev-server)
