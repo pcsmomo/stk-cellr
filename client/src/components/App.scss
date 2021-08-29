@@ -1,0 +1,9 @@
+$font-size: 20px;
+$text-font-color: red;
+$background-color: cornflowerblue;
+
+body {
+  background-color: $background-color;
+  color: $text-font-color;
+  font-size: $font-size;
+}

@@ -1,3 +1,6 @@
-import test from './components/test/test';
+import React from 'react';
+import ReactDOM from 'react-dom';
 
-test();
+import App from './components/App';
+
+ReactDOM.render(<App />, document.getElementById('root'));

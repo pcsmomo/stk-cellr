@@ -32,7 +32,9 @@ git push heroku main
 
 1. Set up the backend node/express server
 2. Set up the front end part and build with webpack
-   1. webpack config
+   1. install react
+      `client % npm install --save react react-dom`
+   2. webpack config
       1. Loaders
          1. images
          2. txt
@@ -41,7 +43,7 @@ git push heroku main
          4. postcss
             `client % npm install --save-dev postcss-loader autoprefixer`
          5. babel
-            `client % npm install --save-dev @babel/core babel-loader @babel/preset-env`
+            `client % npm install --save-dev @babel/core babel-loader @babel/preset-env @babel/preset-react`
       2. Plugin
          1. TerserPlugin : Minimizing
          2. MiniCssExtractPlugin : extracts CSS into separate files
