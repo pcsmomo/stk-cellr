@@ -38,7 +38,9 @@ git push heroku main
          2. txt
          3. css/sass - loaders
             `client % npm install --save-dev style-loader css-loader sass-loader sass`
-         4. babel
+         4. postcss
+            `client % npm install --save-dev postcss-loader autoprefixer`
+         5. babel
             `client % npm install --save-dev @babel/core babel-loader @babel/preset-env`
       2. Plugin
          1. TerserPlugin : Minimizing
@@ -79,3 +81,20 @@ Ready to go with React!
 
 [DevServer](https://webpack.js.org/configuration/dev-server/) \
 [Webpack Dev Server](https://github.com/webpack/webpack-dev-server)
+
+### To do
+
+1. [Webpack Configurator](https://createapp.dev/webpack)
+2. Figure what I need more
+   1. React
+   2. Jest
+   3. Babel
+   4. CSS, PostCSS, SASS
+   5. ESLint, Prettier
+      1. Check ESLint configurations
+   6. HTML webpack plugin, MiniCssExtract Plugin, CleanWebpack Plugin
+      1. what is Webpack Bundle Analyzer, CopyWebpack Plugin?
+   7. React hot loader
+3. See package.json and configurations
+4. Install React
+5. Take all these steps and setup for only the frontend server for Recipe Project
