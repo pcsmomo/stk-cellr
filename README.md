@@ -54,6 +54,9 @@ git push heroku main
             `npm install --save-dev html-webpack-plugin`
       3. Dev server
          `npm install webpack-dev-server --save-dev`
+   3. eslint config
+      1. Install
+         `npm install --save-dev eslint eslint-plugin-react eslint-plugin-react-hooks`
 3. Deploy to github page
    1. install gh-page
       `npm install --save-dev gh-pages`
