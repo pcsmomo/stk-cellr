@@ -5,10 +5,10 @@ import './App.scss';
 
 const App = () => {
   return (
-    <>
+    <div>
       This is STK Cellr
       <Main />
-    </>
+    </div>
   );
 };
 

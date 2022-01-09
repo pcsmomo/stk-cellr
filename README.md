@@ -35,7 +35,9 @@ git push heroku main
    1. install react
       `client % npm install --save react react-dom`
    2. webpack config
-      1. Loaders
+      1. install
+         `client % npm install --save-dev webpack webpack-cli`
+      2. Loaders
          1. images
          2. txt
          3. css/sass - loaders
@@ -44,7 +46,7 @@ git push heroku main
             `client % npm install --save-dev postcss-loader autoprefixer`
          5. babel
             `client % npm install --save-dev @babel/core babel-loader @babel/preset-env @babel/preset-react`
-      2. Plugin
+      3. Plugin
          1. TerserPlugin : Minimizing
          2. MiniCssExtractPlugin : extracts CSS into separate files
             `npm install --save-dev mini-css-extract-plugin`
@@ -52,7 +54,7 @@ git push heroku main
             `npm install --save-dev clean-webpack-plugin`
          4. HTMLWebpackPlugin
             `npm install --save-dev html-webpack-plugin`
-      3. Dev server
+      4. Dev server
          `npm install webpack-dev-server --save-dev`
    3. eslint config
       1. Install
